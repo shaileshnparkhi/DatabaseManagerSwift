@@ -15,6 +15,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         nameTableView.delegate = self
         nameTableView.dataSource = self
         
@@ -52,6 +53,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             return cell
         }
         
+
+        // Do any additional setup after loading the view, typically from a nib.
+
     }
     
     @objc func editBTNClicked(button:UIButton) {
