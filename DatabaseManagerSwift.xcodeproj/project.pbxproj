@@ -12,6 +12,9 @@
 		DC847B11224B39E0002D0D3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC847B0F224B39E0002D0D3E /* Main.storyboard */; };
 		DC847B13224B39E1002D0D3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC847B12224B39E1002D0D3E /* Assets.xcassets */; };
 		DC847B16224B39E1002D0D3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC847B14224B39E1002D0D3E /* LaunchScreen.storyboard */; };
+		DC847B20224B533B002D0D3E /* CommonDBHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC847B1E224B533A002D0D3E /* CommonDBHandler.swift */; };
+		DC847B21224B533B002D0D3E /* NameDBHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC847B1F224B533A002D0D3E /* NameDBHandler.swift */; };
+		DC847B22224B7A20002D0D3E /* Name.db in Resources */ = {isa = PBXBuildFile; fileRef = DC847B1D224B52CF002D0D3E /* Name.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		DC847B12224B39E1002D0D3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC847B15224B39E1002D0D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC847B17224B39E1002D0D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC847B1D224B52CF002D0D3E /* Name.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Name.db; sourceTree = "<group>"; };
+		DC847B1E224B533A002D0D3E /* CommonDBHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonDBHandler.swift; sourceTree = "<group>"; };
+		DC847B1F224B533A002D0D3E /* NameDBHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameDBHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +62,23 @@
 			children = (
 				DC847B0B224B39E0002D0D3E /* AppDelegate.swift */,
 				DC847B0D224B39E0002D0D3E /* ViewController.swift */,
+				DC847B1E224B533A002D0D3E /* CommonDBHandler.swift */,
+				DC847B1F224B533A002D0D3E /* NameDBHandler.swift */,
 				DC847B0F224B39E0002D0D3E /* Main.storyboard */,
+				DC847B23224B7B49002D0D3E /* Database */,
 				DC847B12224B39E1002D0D3E /* Assets.xcassets */,
 				DC847B14224B39E1002D0D3E /* LaunchScreen.storyboard */,
 				DC847B17224B39E1002D0D3E /* Info.plist */,
 			);
 			path = DatabaseManagerSwift;
+			sourceTree = "<group>";
+		};
+		DC847B23224B7B49002D0D3E /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				DC847B1D224B52CF002D0D3E /* Name.db */,
+			);
+			name = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC847B22224B7A20002D0D3E /* Name.db in Resources */,
 				DC847B16224B39E1002D0D3E /* LaunchScreen.storyboard in Resources */,
 				DC847B13224B39E1002D0D3E /* Assets.xcassets in Resources */,
 				DC847B11224B39E0002D0D3E /* Main.storyboard in Resources */,
@@ -135,7 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC847B21224B533B002D0D3E /* NameDBHandler.swift in Sources */,
 				DC847B0E224B39E0002D0D3E /* ViewController.swift in Sources */,
+				DC847B20224B533B002D0D3E /* CommonDBHandler.swift in Sources */,
 				DC847B0C224B39E0002D0D3E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
